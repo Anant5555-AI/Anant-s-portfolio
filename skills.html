@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills</title>
+</head>
+<style>
+    #slideShow{
+         width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: slideShow 9s ease-in-out infinite;
+  transform: translateX(-50px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+    }
+
+ @keyframes slideShow{
+ 0%{
+    background-image: url("html.jpg");
+ }
+ 33%{
+    background-image: url("css.jpg");
+ }
+ 49%{
+    background-image: url("tailwind.png");
+ }
+ 69%{
+    background-image: url("javas.jpg");
+ }
+ 80%{
+    background-image: url("react.jpg");
+ }
+ 100%{
+    background-image: url("next.png");
+ }
+ }
+</style>
+<body style="background-color: black;">
+    <h2 style="color: aliceblue; text-align: center;">My Skills </h2>
+    <div id="slideShow">
+       
+    </div>
+    
+</body>
+</html>

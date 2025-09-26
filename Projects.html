@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects | Anant's Portfolio</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      color: white;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    #navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    #icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    #name {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Times New Roman', Times, serif;
+      color: aqua;
+      font-size: 26px;
+      margin: 0;
+    }
+
+    .linksnav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .linksnav a:hover {
+      color: aqua;
+    }
+
+    .projects-container {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: aqua;
+      margin-bottom: 50px;
+    }
+
+    .project {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h2 {
+      color: aqua;
+      margin-top: 0;
+    }
+
+    .project p {
+      margin: 15px 0;
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 8px 20px;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .project-links a:hover {
+      background-color: #0052a3;
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin: 15px 0;
+      border: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      #navbar {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      #name {
+        position: static;
+        transform: none;
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .linksnav {
+        margin-top: 10px;
+      }
+
+      .project {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="navbar">
+    <a href="index.html">
+      <img src="Anant's Portfolio Logo Design.png" alt="icon" id="icon">
+    </a>
+    <h2 id="name">ANANT's PORTFOLIO</h2>
+    <nav class="linksnav">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="#">Projects</a>
+      <a href="Anant_Anand_WD_AlmaBetter.pdf" download>Resume</a>
+    </nav>
+  </header>
+
+  <div class="projects-container">
+    <h1>My Projects</h1>
+    
+    <div class="project">
+      <h2>Flipkart Clone</h2>
+      <p>A full-stack e-commerce web application inspired by Flipkart, built with modern web technologies.</p>
+      <div class="project-links">
+        <a href="https://github.com/Anant5555-AI/Flipkart" target="_blank">View Code</a>
+        <a href="https://flipkart-client-1.onrender.com" target="_blank">Live Demo</a>
+      </div>
+      <h2>Entertainment-App </h2>
+      <p>A full-stack Entertainment web application, built with modern web technologies.</p>
+      <div class="project-links">
+        <a href="https://github.com/Anant5555-AI/Entertainment-App-F-" target="_blank">View Code</a>
+        <a href="https://entertainment-app-f-1.onrender.com" target="_blank">Live Demo</a>
+      </div>
+      <h2>Website-Builder(using gemini api) </h2>
+      <p>A full-stack Entertainment web application, built with modern web technologies.</p>
+      <div class="project-links">
+        <a href="https://github.com/Anant5555-AI/Website-Builder-using-gemini-api-" target="_blank">View Code</a>
+        <a href="https://website-builder-using-gemini-api.onrender.com" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <!-- Add more projects here in the future -->
+    
+  </div>
+
+  <footer>
+    <section id="contact" style="background-color: #111; color: white; text-align: center; padding: 20px 0; margin-top: 50px;">
+      <h2 style="color: aqua;">Contact Me</h2>
+      <p>You can reach out to me anytime via the following platforms:</p>
+      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 30px; font-size: 20px;">
+        <a href="https://www.linkedin.com/in/anant-anand-975247193" target="_blank" style="color: white; text-decoration: none;">
+          🔗 LinkedIn
+        </a>
+        <a href="mailto:anantanand900@gmail.com" style="color: white; text-decoration: none;">
+          📧 Email
+        </a>
+        <a href="https://github.com/Anant5555-AI" target="_blank" style="color: white; text-decoration: none;">
+          💻 GitHub
+        </a>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>

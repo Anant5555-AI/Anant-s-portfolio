@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #slider-container {
+      overflow: hidden;
+      width: 100%;
+      height: 250px;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(250px * 12); /* total width = one image * total images */
+      animation: scrollLeft 20s linear infinite;
+    }
+
+    .slider-track img {
+      width: 250px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slider-track img {
+        width: 180px;
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>My Skills</h2>
+
+  <div id="slider-container">
+    <div class="slider-track">
+      <!-- Repeat images for infinite effect -->
+      <img src="html.jpg" alt="HTML" />
+      <img src="css.jpg" alt="CSS" />
+      <img src="tailwind.png" alt="Tailwind" />
+      <img src="javas.jpg" alt="JavaScript" />
+      <img src="react.jpg" alt="React" />
+      <img src="next.png" alt="Next.js" />
+
+      <!-- Duplicate for smooth loop -->
+      <img src="html.jpg" alt="HTML" />
+      <img src="css.jpg" alt="CSS" />
+      <img src="tailwind.png" alt="Tailwind" />
+      <img src="javas.jpg" alt="JavaScript" />
+      <img src="react.jpg" alt="React" />
+      <img src="next.png" alt="Next.js" />
+    </div>
+  </div>
+
+</body>
+</html>
