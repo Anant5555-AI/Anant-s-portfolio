@@ -143,15 +143,6 @@ const Home = () => {
                             src="/profile.jpg"
                             alt="Anant"
                             className="floating-profile-img"
-                            style={{
-                                width: '160px',
-                                height: '160px',
-                                borderRadius: '50%',
-                                border: '4px solid var(--primary)',
-                                boxShadow: '0 0 40px rgba(0, 242, 234, 0.5)',
-                                objectFit: 'cover',
-                                objectPosition: 'center top' // Focus on face
-                            }}
                         />
                     </div>
 
