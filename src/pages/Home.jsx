@@ -116,19 +116,10 @@ const Home = () => {
         <main ref={containerRef} style={{ overflowX: 'hidden', position: 'relative' }}>
             {/* Floating Coder Character */}
             <img
+                className="floating-coder"
                 ref={coderRef}
                 src={coderImg}
                 alt="Coding Mascot"
-                style={{
-                    position: 'absolute',
-                    top: '10%',
-                    right: '10%',
-                    width: '160px',
-                    height: 'auto',
-                    objectFit: 'contain',
-                    zIndex: 20,
-                    filter: 'drop-shadow(0 0 20px rgba(0, 255, 255, 0.4))'
-                }}
             />
 
             <CoderBackground />
