@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import Skills from '../components/Skills';
@@ -11,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
     const containerRef = useRef(null);
+    const navigate = useNavigate();
     const cardRef = useRef(null);
     const coderRef = useRef(null);
 
@@ -179,9 +181,9 @@ const Home = () => {
                     </p>
 
                     <div className="hero-text-item" style={{ marginTop: '45px', display: 'flex', gap: '20px', justifyContent: 'center' }}>
-                        <a href="#skills" onClick={(e) => {
+                        <a href="/projects" onClick={(e) => {
                             e.preventDefault();
-                            document.getElementById('skills-section').scrollIntoView({ behavior: 'smooth' });
+                            navigate('/projects');
                         }} style={{
                             padding: '14px 35px',
                             fontSize: '18px',

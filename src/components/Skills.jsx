@@ -19,6 +19,7 @@ const skills = [
     { name: 'Python', img: pythonImg },
     { name: 'FastAPI', img: fastApiImg },
     { name: 'Azure', img: azureImg },
+    { name: 'React Native', img: reactImg },
 ];
 
 const Skills = () => {

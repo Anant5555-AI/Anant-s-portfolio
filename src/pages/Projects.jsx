@@ -18,6 +18,13 @@ const projectsData = [
         description: "A full-stack web application that uses Gemini API to help build websites.",
         codeLink: "https://github.com/Anant5555-AI/Website-Builder-using-gemini-api-",
         demoLink: "https://website-builder-using-gemini-api.onrender.com"
+    },
+    {
+        title: "Real-Time Chat App",
+        description: "A secure full-stack chat application featuring real-time messaging, end-to-end encryption, and cross-platform support.",
+        codeLink: "https://github.com/Anant5555-AI/My-chat-app",
+        demoLink: "https://my-chat-app-1kbx.onrender.com",
+        apkLink: "https://expo.dev/artifacts/eas/j13gUHCcRj75XywvWQ7BYA.apk"
     }
 ];
 
@@ -90,6 +97,34 @@ const Projects = () => {
                                 }}>
                                 Live Demo
                             </a>
+                            {project.apkLink && (
+                                <a href={project.apkLink} download style={{
+                                    flex: 1,
+                                    textAlign: 'center',
+                                    padding: '10px',
+                                    borderRadius: '8px',
+                                    background: 'rgba(50, 205, 50, 0.1)', // Green tint
+                                    color: '#32cd32',
+                                    textDecoration: 'none',
+                                    border: '1px solid #32cd32',
+                                    transition: 'all 0.3s ease',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    fontSize: '14px' // Slightly smaller text if needed to fit
+                                }}
+                                    title="Download and install on your phone"
+                                    onMouseOver={(e) => {
+                                        e.currentTarget.style.background = '#32cd32';
+                                        e.currentTarget.style.color = 'black';
+                                    }}
+                                    onMouseOut={(e) => {
+                                        e.currentTarget.style.background = 'rgba(50, 205, 50, 0.1)';
+                                        e.currentTarget.style.color = '#32cd32';
+                                    }}>
+                                    Download APK (Mobile)
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))}
